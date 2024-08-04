@@ -12,7 +12,6 @@ modifiers = DislocationAnalysisModifier()
 modifiers.input_crystal_structure = DislocationAnalysisModifier.Lattice.FCC
 pipeline.modifiers.append(modifiers)
 
-#for frame in range(pipeline.source.num_frames):
 def dislocation(frame):
     data = pipeline.compute(frame)
     step = frame * 100
@@ -56,8 +55,6 @@ def dislocation(frame):
             Cfrank += 1
         else:
             Cother += 1
-        
-    DisCount = [Cperfect,Cshockley,Cstairrod,Chirth,Cfrank,Cother]
     
     print("%d    %d    %d    %d    %d    %d\n" % (Cother, Cperfect, Cshockley, Cstairrod, Chirth, Cfrank))
 
@@ -99,9 +96,6 @@ if __name__ == '__main__':
 
     print(f"Computation took {t_end - t_start} seconds")
 
-
-    if 1:
-        pass
 
 
 

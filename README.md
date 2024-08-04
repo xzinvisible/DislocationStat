@@ -3,9 +3,9 @@ Python script for computing dislocation statistic with [ovito](https://www.ovito
 位错统计脚本，使用ovito python模块计算  
 
 Compute the length and quantities of various dislocations, which includes
--Perfact
--Shockley
--Stair-rod
--Hirth
--Frank
+-Perfact  
+-Shockley  
+-Stair-rod  
+-Hirth  
+-Frank  
 

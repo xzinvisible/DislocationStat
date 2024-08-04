@@ -76,7 +76,7 @@ if __name__ == '__main__':
 
     frame = range(pipeline.source.num_frames)
 
-    with mp.Pool(24) as pool:
+    with mp.Pool() as pool:
         distat = list(pool.map(dislocation,frame))
 
     t_end = time()
